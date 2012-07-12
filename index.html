@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Interactive Visualisation of the Computer Science Syllabus</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script type="text/javascript" src="dojo/dojo.js" djConfig="parseOnLoad: false, isDebug: false"></script>
+	<script type="text/javascript" src="visualisation/Project.js"></script>
+</head>
+<body>
+
+<div class="main">
+	<div id="loading" class="hideloading"></div>
+	<div id="programme">
+		<label for="degree">Programme:</label>
+		<select title="List containing programmes" id="degree" onchange="visual.reload();">
+			<option value="none">Please select your programme.</option>
+			<option value="SPLUS89CFFA">Artificial Intelligence BSc (Hons)</option>
+			<option value="SPLUS9B490C">Artificial Intelligence Enterprise BSc (Hons)</option>
+			<option value="SPLUS89CFFD">Artificial Intelligence MEng (Hons)</option>
+			<option value="SPLUS983554">Computation</option>
+			<option value="SPLUS89CFF0">Computer Engineering BSc(Hons)</option>
+			<option value="SPLUS81F110">Computer Engineering MEng (Hons)</option>
+			<option value="SPLUS4BB7C2">Computer Science BSc (Hons) and with Industrial Experience</option>
+			<option value="SPLUS89CFE1">Computer Science MEng (Hons)</option>
+			<option value="SPLUS89D005">Computer Science and Maths BSc (Hons)</option>
+			<option value="SPLUS89D002">Computer Science with Business Management BSc (Hons)</option>
+			<option value="SPLUS30B279">Computing Science BSc (Hons)</option>
+			<option value="SPLUS89D00C">Computing for Business Applications BSc (Hons)</option>
+			<option value="SPLUS89CFED">Electronic and Computer Systems MEng (Hons)</option>
+			<option value="SPLUS30B27A">Information Systems Engineering BSc (Hons)</option>
+			<option value="SPLUS89D00D">Internet Computing BSc (Hons)</option>
+			<option value="SPLUSF4BB39">MSc in Computer Science with ICT Management course units</option>
+			<option value="SPLUS89D00F">Software Engineering - Business Systems BSc (Hons)</option>
+			<option value="SPLUSC3478B">Software Engineering - Informatics BSc (Hons)</option>
+			<option value="SPLUS89CFF4">Software Engineering BSc (Hons)</option>
+			<option value="SPLUS9B490A">Software Engineering Enterprise BSc (Hons)</option>
+			<option value="SPLUS89CFF7">Software Engineering MEng (Hons)</option>
+		</select>
+		Select Courses:
+		<input type="button" id="allbutton" value="All" disabled="true" onclick="visual.selectAll();"></input>
+		<input type="button" id="mandatorybutton" value="Mandatory" disabled="true" onclick="visual.selectMandatory();"></input>
+		<input type="button" id="nonebutton" value="None" disabled="true" onclick="visual.selectNone();"></input>
+	</div>
+	<div>
+		<div class="menu">
+			<ul>
+				<li id="1"><div class="disabled">Introduction</div></li>
+				<li id="4"><div class="disabled">Themes</div></li>
+				<li id="2"><div class="disabled">Syllabus</div></li>
+				<li id="3"><div class="disabled">Year</div></li>
+				<li id="5"><div class="disabled">Selected</div></li>
+			</ul>
+		</div>
+		<div id="information"></div>
+		<div id="gfx"></div>
+		<div id="description">
+			<NOSCRIPT>In order to use this application: <br/>1. Enable javascript or download a javascript enabled browser from <a href="http://www.mozilla.com/firefox/">here</a><br/>2. Enable ActiveX for Internet Explorer.</NOSCRIPT>
+			<!--Do not remove - this div shows the submenu -->
+			<div id="submenu"></div>
+			<!--Do not remove - this div shows the course details -->
+			<div id="coursedetail"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+

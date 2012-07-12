@@ -1,0 +1,128 @@
+* {
+padding: 0; 
+margin: 0;
+}
+
+.main {
+background-color:#FFFFFF; 
+color:#000000; 
+font-family:Verdana,Arial,Helvetica,Sans-Serif; 
+font-size:80%;
+}
+
+#programme{
+background-color:#FF9966; 
+padding: 10px; 
+margin-bottom:15px; 
+border-bottom: 2px solid #FF6633;
+}
+
+#programme input {
+font-family:Verdana,Arial,Helvetica,Sans-Serif; 
+}
+
+#description {
+background-color:#009933; 
+padding: 10px;
+}
+
+#information{
+background-color:#009933; 
+padding: 10px;
+}
+
+#gfx {
+position: relative;
+background: #FFFFFF;
+overflow:scroll;
+height:0;
+width:100%;
+}
+
+.showloading {
+display: visible;
+float:right;
+background: #FF3333;
+padding: 10px;
+}
+
+.hideloading {
+float:right;
+display: hidden;
+}
+
+.menu ul {
+height: 25px;
+list-style-type: none;
+}
+
+.menu li{
+float: left;
+margin-left:5px;
+}
+
+.menu li a:link, .menu li a:active, .menu li a:visited {
+display: block;
+text-decoration: none;
+height: 25px;
+width: 100px;
+line-height: 25px;
+font-weight: bold;
+color: #000000;
+text-align: center;
+background-color:#66CC00;
+}
+
+
+.menu li a:focus, .menu li a:hover{
+text-decoration : none;
+color: #FFFFFF;
+background-color:#009933;
+}
+
+.enabled {
+color: #000000;
+background-color: #66CC00;
+height: 25px;
+width: 100px;
+line-height: 25px;
+font-weight: bold;
+text-align: center;
+}
+
+.disabled {
+color: #999966;
+background-color: #CCCC99;
+height: 25px;
+width: 100px;
+line-height: 25px;
+font-weight: bold;
+text-align: center;
+}
+
+.selected {
+color: #FFFFFF;
+background-color: #009933;
+height: 25px;
+width: 100px;
+line-height: 25px;
+font-weight: bold;
+text-align: center;
+}
+
+.error {
+color: red;
+font-weight: 900;
+}
+
+.introtitle {
+background:#FF9966;
+font-weight:bold;
+text-transform:uppercase; 
+padding: 10px;
+}
+
+.introtext {
+background: #00CC66;
+padding: 10px;
+}

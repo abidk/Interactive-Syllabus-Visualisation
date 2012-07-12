@@ -1,0 +1,1 @@
+build.bat profile=visualisation action=release optimize=shrinksafe layerOptimize=packer
