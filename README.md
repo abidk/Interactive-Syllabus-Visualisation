@@ -3,4 +3,8 @@ Interactive Visualisation of the Computer Science Syllabus
 
 Developed using Dojo/JavaScript.
 
-Takes university course data and presents it a fashion so the course syllabus can be visualised. The student can then pick course subject they would like to do and it highlights the mandatory courses required.
+Takes university course data and presents it to the student so the course syllabus can be visualised. 
+
+The student can then pick course subjects and the application will highlight subjects availabkle to them in subsequent semesters.
+
+The application allows the student to select courses to meet the mimimum criteria.
